@@ -8,7 +8,7 @@ const DUMMY_DATA = [
       "https://upload.wikimedia.org/wikipedia/commons/d/d3/Stadtbild_M%C3%BCnchen.jpg",
     address: "Meetupstreet 5, 12345 Meetup City",
     description:
-      "This is a first, amazing meetup which you definitely should not miss. It will be...",
+      "This is a first, amazing meetup which you definitely should not miss. It will be a lot fun!",
   },
   {
     id: "m2",
@@ -17,7 +17,7 @@ const DUMMY_DATA = [
       "https://upload.wikimedia.org/wikipedia/commons/d/d3/Stadtbild_M%C3%BCnchen.jpg",
     address: "Meetupstreet 5, 12345 Meetup City",
     description:
-      "This is a second, amazing meetup which you definitely should not miss. It will be...",
+      "This is a second, amazing meetup which you definitely should not miss. It will be a lot fun!",
   },
 ];
 
