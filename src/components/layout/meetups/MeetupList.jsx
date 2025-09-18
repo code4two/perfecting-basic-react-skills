@@ -1,9 +1,9 @@
 import MeetupItem from "./MeetupItem";
 
-const MeetupList = (itemss) => {
+const MeetupList = ({ meetups }) => {
   return (
     <ul className="m-1">
-      {itemss.map((meetup) => (
+      {meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
           id={meetup.id}
