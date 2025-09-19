@@ -1,5 +1,5 @@
 const NewMeetupPage = () => {
-  return <div>New Meetups Page rendered</div>;
+  return <div>New Meetups here</div>;
 };
 
 export default NewMeetupPage;
