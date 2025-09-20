@@ -1,42 +1,50 @@
 import Card from "../uis/Card";
 
 const NewMeetupForm = () => {
+  const submitHandler = () => {
+    alert("Fire🔥🔥🔥🔥🔥🔥🔥🔥🔥");
+  };
+
   return (
     <Card>
-      <form>
+      <form onSubmit={submitHandler}>
         <div className="flex flex-col mb-2">
           <label htmlFor="title">Meetup Title</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
             type="text"
             required
+            autoComplete="on"
             id="title"
           />
         </div>
         <div className="flex flex-col mb-2">
           <label htmlFor="image">Meetup Image</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
             type="url"
             required
+            autoComplete="on"
             id="image"
           />
         </div>
         <div className="flex flex-col mb-2">
           <label htmlFor="address">Address</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
             type="text"
             required
+            autoComplete="on"
             id="address"
           />
         </div>
         <div className="flex flex-col mb-3">
           <label htmlFor="description">Description</label>
           <textarea
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
             id="description"
             required
+            autoComplete="on"
             rows="5"
           ></textarea>
         </div>
