@@ -12,7 +12,7 @@ const NewMeetupForm = () => {
         <div className="flex flex-col mb-2">
           <label htmlFor="title">Meetup Title</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500 p-1"
             type="text"
             required
             autoComplete="on"
@@ -22,7 +22,7 @@ const NewMeetupForm = () => {
         <div className="flex flex-col mb-2">
           <label htmlFor="image">Meetup Image</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500 p-1"
             type="url"
             required
             autoComplete="on"
@@ -32,7 +32,7 @@ const NewMeetupForm = () => {
         <div className="flex flex-col mb-2">
           <label htmlFor="address">Address</label>
           <input
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500 p-1"
             type="text"
             required
             autoComplete="on"
@@ -42,7 +42,7 @@ const NewMeetupForm = () => {
         <div className="flex flex-col mb-3">
           <label htmlFor="description">Description</label>
           <textarea
-            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500"
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm hover:outline-blue-500 p-1"
             id="description"
             required
             autoComplete="on"
