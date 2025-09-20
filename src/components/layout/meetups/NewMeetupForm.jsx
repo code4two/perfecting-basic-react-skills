@@ -4,24 +4,46 @@ const NewMeetupForm = () => {
   return (
     <Card>
       <form>
-        <div>
+        <div className="flex flex-col mb-2">
           <label htmlFor="title">Meetup Title</label>
-          <input type="text" required id="title" />
+          <input
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            type="text"
+            required
+            id="title"
+          />
         </div>
-        <div>
+        <div className="flex flex-col mb-2">
           <label htmlFor="image">Meetup Image</label>
-          <input type="url" required id="image" />
+          <input
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            type="url"
+            required
+            id="image"
+          />
         </div>
-        <div>
-          <label htmlFor="address">Meetup Address</label>
-          <input type="text" required id="address" />
+        <div className="flex flex-col mb-2">
+          <label htmlFor="address">Address</label>
+          <input
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            type="text"
+            required
+            id="address"
+          />
         </div>
-        <div>
-          <label htmlFor="description">Meetup Description</label>
-          <textarea id="description" required rows="5"></textarea>
+        <div className="flex flex-col mb-3">
+          <label htmlFor="description">Description</label>
+          <textarea
+            className="outline-1 outline-gray-200 mt-1 py-1 w-125 font-normal text-sm"
+            id="description"
+            required
+            rows="5"
+          ></textarea>
         </div>
-        <div>
-          <button>Add Meetup</button>
+        <div className="flex justify-end">
+          <button className="cursor-pointer text-white bg-pink-900 py-2 px-6 rounded-sm">
+            Add Meetup
+          </button>
         </div>
       </form>
     </Card>
