@@ -1,7 +1,8 @@
 import Card from "../uis/Card";
 
 const NewMeetupForm = () => {
-  const submitHandler = () => {
+  const submitHandler = (event) => {
+    event.preventDefault();
     alert("Fire🔥🔥🔥🔥🔥🔥🔥🔥🔥");
   };
 
