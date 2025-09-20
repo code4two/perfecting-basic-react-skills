@@ -1,9 +1,29 @@
 import Card from "../uis/Card";
+import { useRef } from "react";
 
 const NewMeetupForm = () => {
+  const titleInputRef = useRef();
+  const imageInputRef = useRef();
+  const addressInputRef = useRef();
+  const descriptionInputRef = useRef();
+
   const submitHandler = (event) => {
     event.preventDefault();
-    alert("Fire🔥🔥🔥🔥🔥🔥🔥🔥🔥");
+    // alert("Fire🔥🔥🔥🔥🔥🔥🔥🔥🔥");
+
+    const enteredTitle = titleInputRef.current.value;
+    const enteredImage = imageInputRef.current.value;
+    const enteredAddress = addressInputRef.current.value;
+    const enteredDescription = descriptionInputRef.current.value;
+
+    const meetupData = {
+      title: enteredTitle,
+      image: enteredImage,
+      address: enteredAddress,
+      description: enteredDescription,
+    };
+
+    console.log(meetupData);
   };
 
   return (
@@ -17,6 +37,7 @@ const NewMeetupForm = () => {
             required
             autoComplete="on"
             id="title"
+            ref={titleInputRef}
           />
         </div>
         <div className="flex flex-col mb-2">
@@ -27,6 +48,7 @@ const NewMeetupForm = () => {
             required
             autoComplete="on"
             id="image"
+            ref={imageInputRef}
           />
         </div>
         <div className="flex flex-col mb-2">
@@ -37,6 +59,7 @@ const NewMeetupForm = () => {
             required
             autoComplete="on"
             id="address"
+            ref={addressInputRef}
           />
         </div>
         <div className="flex flex-col mb-3">
@@ -47,6 +70,7 @@ const NewMeetupForm = () => {
             required
             autoComplete="on"
             rows="5"
+            ref={descriptionInputRef}
           ></textarea>
         </div>
         <div className="flex justify-end">
