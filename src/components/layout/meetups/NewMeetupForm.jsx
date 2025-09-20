@@ -1,7 +1,7 @@
 import Card from "../uis/Card";
 import { useRef } from "react";
 
-const NewMeetupForm = () => {
+const NewMeetupForm = ({ meetupDataValues }) => {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -24,6 +24,7 @@ const NewMeetupForm = () => {
     };
 
     console.log(meetupData);
+    meetupDataValues(meetupData);
   };
 
   return (
